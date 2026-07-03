@@ -56,11 +56,11 @@ Chaque année, des millions d'hectares de forêts sont détruits par les incendi
 Le pipeline complet se compose des étapes suivantes :
 
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────────┐    ┌──────────────┐
-│  Image /    │───▶│ Preprocessing│───▶│  CNN Backbone    │───▶│ Classification│
-│  Frame vidéo│    │  224 × 224   │    │  (Transfer       │    │  fire / smoke │
-│             │    │  + Normalize │    │   Learning)      │    │  / non-fire   │
-└─────────────┘    └──────────────┘    └─────────────────┘    └──────────────┘
+┌─────────────┐     ┌──────────────┐     ┌─────────────────┐     ┌────────────────┐
+│  Image /    │───▶│ Preprocessing │───▶│  CNN Backbone   │───▶│ Classification │
+│  Frame vidéo│     │  224 × 224   │     │  (Transfer      │     │  fire / smoke  │
+│             │     │  + Normalize │     │   Learning)     │     │  / non-fire    │
+└─────────────┘     └──────────────┘     └─────────────────┘     └────────────────┘
 ```
 
 Les deux modèles utilisent un **backbone pré-entraîné sur ImageNet** dont les couches convolutionnelles sont gelées (ou partiellement dégelées pour le fine-tuning), suivi d'une **tête de classification personnalisée**.

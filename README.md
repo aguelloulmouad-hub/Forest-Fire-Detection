@@ -298,6 +298,6 @@ Le rapport complet du projet (`rapport_mp_PFA.pdf`, 63 pages) couvre :
 
 <div align="center">
 
-*⭐ Si ce projet vous a été utile, n'hésitez pas à lui donner une étoile !*
+**Made with ❤️ for DL & Fire detection**
 
 </div>
